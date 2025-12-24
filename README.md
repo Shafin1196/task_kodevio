@@ -1,16 +1,19 @@
 # task_kodevio
 
-A new Flutter project.
+A new Flutter task by kodevio limited.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+how to run: clone the project from git run on andriod studio or build flutter apk and install this on any android then run it.
 
-A few resources to get you started if this is your first Flutter project:
+features: 
+1. fetch data from public api and view all users.
+2. ontap on users navigate to user details page.
+3. light mode or dark mode feature.
+4. search by user name.
+5. refresh feature on pull.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+packaged:
+1. flutter_riverpod
+2. google_fonts
+3. http
