@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:task_kodevio/constants/constants.dart';
-import 'package:task_kodevio/providers/buttonProviders.dart';
+import 'package:task_kodevio/providers/list_provider.dart';
 import 'package:task_kodevio/screens/home.dart';
 void main() {
   runApp(ProviderScope(child: MyApp()));
@@ -16,7 +16,7 @@ class _MyAppState extends ConsumerState<MyApp> {
   var themeDarkLight = colorScheme2;
   @override
   Widget build(BuildContext context) {
-    bool themeButton = ref.watch(lightDark);
+    bool themeButton = ref.watch(listProviderNotifierProvider).isDarkMode;
     if (!themeButton) {
       themeDarkLight = colorScheme1;
     } else {
